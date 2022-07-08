@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230fa4ae%22></rect><path fill=%22%23fff%22 d=%22M24.25 23.30L25.25 15.60Q30.75 14.40 35.15 14.40Q39.55 14.40 42.45 14.60L42.45 14.60L42.45 19.50Q49.15 14.80 56.75 14.80L56.75 14.80Q66.75 14.80 71.25 20.50Q75.75 26.20 75.75 39.50L75.75 39.50Q75.75 46.60 73.65 52.00Q71.55 57.40 67.95 60.40L67.95 60.40Q61.05 66.40 51.55 66.40L51.55 66.40Q47.45 66.40 43.75 65.60L43.75 65.60L43.75 74.20Q49.65 75.80 51.35 77.90L51.35 77.90L50.35 85.60L25.25 85.60L24.25 77.90Q25.55 76.10 29.75 74.50L29.75 74.50L29.75 26.70Q26.25 25.50 24.25 23.30L24.25 23.30ZM50.55 56.20L50.55 56.20Q55.55 56.20 58.45 51.75Q61.35 47.30 61.35 39.45Q61.35 31.60 59.75 28.70Q58.15 25.80 53.95 25.80L53.95 25.80Q47.55 25.80 43.75 28.80L43.75 28.80L43.75 55.40Q46.85 56.20 50.55 56.20Z%22></path></svg>" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password Generator</h2>
+      <div class="result-container">
+        <span id="result"></span>
+        <button class="btn" id="clipboard">
+          <i class="far fa-clipboard"></i>
+        </button>
+      </div>
+      <div class="settings">
+        <div class="setting">
+          <label>Password Length</label>
+          <input type="number" id="length" min="4" max="20" value="20">
+        </div>
+        <div class="setting">
+          <label>Include uppercase letters</label>
+          <input type="checkbox" id="uppercase" checked>
+        </div>
+        <div class="setting">
+          <label>Include lowercase letters</label>
+          <input type="checkbox" id="lowercase" checked>
+        </div>
+        <div class="setting">
+          <label>Include numbers</label>
+          <input type="checkbox" id="numbers" checked>
+        </div>
+        <div class="setting">
+          <label>Include symbols</label>
+          <input type="checkbox" id="symbols" checked>
+        </div>
+      </div>
+
+      <button class="btn btn-large" id="generate">
+        Generate Password
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
